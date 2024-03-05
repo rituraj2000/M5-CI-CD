@@ -30,7 +30,4 @@ jobs:
             pip install -r requirements.txt 
             pytest tests
 
-      - name: Run with act  # Runs docker-compose using the act tool
-        uses: nektos/act@v2  # Uses the nektos/act action
-        with:
-          args: docker-compose up -d  # Arguments passed to act (runs docker-compose)
+      # Removed the step related to 'act' 
